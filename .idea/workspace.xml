@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="107a09a9-0c16-408a-a46b-068babf8067c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/part1/XMLNameSurnameMerging.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/part2/Violation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/part2/ViolationJSONtoXMLSummary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/part2/ViolationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/part1/input.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/part1/output.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/part2/input/violation2020.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/part2/input/violation2021.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/part2/input/violation2022.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/part2/output/fine_summary.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HciNRjBOpVBmqjsLwBTlxJ4aEY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Projects/homework2/src/main/resources/part2/jsons&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\homework2\src\main\resources\part2\jsons" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\homework2\src\main\resources\part1" />
+      <recent name="C:\Projects\homework2\src\main\resources\part2" />
+      <recent name="C:\Projects\homework2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.XMLNameSurnameMerging">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="part2.Test" />
+      <module name="homework2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="part2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ViolationJSONtoXMLSummary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="part2.ViolationJSONtoXMLSummary" />
+      <module name="homework2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="part2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XMLNameSurnameMerging" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="part1.XMLNameSurnameMerging" />
+      <module name="homework2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="part1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="regexTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="part1.regexTest" />
+      <module name="homework2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="part1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="part2.test" />
+      <module name="homework2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="part2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.XMLNameSurnameMerging" />
+        <item itemvalue="Application.ViolationJSONtoXMLSummary" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.regexTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="107a09a9-0c16-408a-a46b-068babf8067c" name="Changes" comment="" />
+      <created>1668590735644</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668590735644</updated>
+      <workItem from="1668590737132" duration="22809000" />
+      <workItem from="1668624462413" duration="19518000" />
+      <workItem from="1668700352465" duration="3847000" />
+      <workItem from="1668765376255" duration="12789000" />
+      <workItem from="1668785819668" duration="3448000" />
+      <workItem from="1668794340447" duration="1122000" />
+      <workItem from="1668847917527" duration="10907000" />
+      <workItem from="1669022777495" duration="3110000" />
+      <workItem from="1669037753324" duration="3160000" />
+      <workItem from="1669116769543" duration="6990000" />
+      <workItem from="1669137243311" duration="7765000" />
+      <workItem from="1669212216160" duration="2034000" />
+      <workItem from="1669215793957" duration="8751000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

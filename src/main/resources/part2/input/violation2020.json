@@ -1,0 +1,51 @@
+[
+  {
+    "date_time": "2020-05-09 10:00:44",
+    "first_name": "Claude",
+    "last_name": "Fide",
+    "type": "INVALID_LICENSE",
+    "fine_amount": 1100.00
+  },
+  {
+    "date_time": "2020-05-05 15:39:03",
+    "first_name": "Franklin",
+    "last_name": "Clinton",
+    "type": "SPEEDING",
+    "fine_amount": 340.00
+  },
+  {
+    "date_time": "2020-04-18 03:11:13",
+    "first_name": "Tommy",
+    "last_name": "Vercetti",
+    "type": "RUNNING_A_RED_LIGHT",
+    "fine_amount": 400.00
+  },
+  {
+    "date_time": "2020-05-22 23:09:33",
+    "first_name": "Trevor",
+    "last_name": "Philips",
+    "type": "HIT_AND_RUN",
+    "fine_amount": 820.00
+  },
+  {
+    "date_time": "2020-03-02 07:19:02",
+    "first_name": "Carl",
+    "last_name": "Johnson",
+    "type": "DISTRACTED_DRIVING",
+    "fine_amount": 250.00
+  },
+  {
+    "date_time": "2020-10-15 13:27:41",
+    "first_name": "Michael",
+    "last_name": "De Santa",
+    "type": "RUNNING_A_STOP_SIGN",
+    "fine_amount": 300.00
+  },
+  {
+    "date_time": "2020-01-01 08:21:17",
+    "first_name": "Niko",
+    "last_name": "Bellic",
+    "type": "RECKLESS_DRIVING",
+    "fine_amount": 660.00
+  }
+]
