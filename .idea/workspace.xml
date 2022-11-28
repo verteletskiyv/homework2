@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="107a09a9-0c16-408a-a46b-068babf8067c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/part1/XMLNameSurnameMerging.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/part2/Violation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/part2/ViolationJSONtoXMLSummary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/part2/ViolationType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/part1/input.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/part1/output.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/part2/input/violation2020.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/part2/input/violation2021.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/part2/input/violation2022.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/part2/output/fine_summary.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/part1/XMLNameSurnameMerging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/part1/XMLNameSurnameMerging.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +22,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -69,7 +54,7 @@
       <recent name="C:\Projects\homework2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.XMLNameSurnameMerging">
+  <component name="RunManager" selected="Application.XMLNamesMerging">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="part2.Test" />
       <module name="homework2" />
@@ -83,8 +68,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ViolationJSONtoXMLSummary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="part2.ViolationJSONtoXMLSummary" />
+    <configuration name="ViolationsToXmlSummary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="part2.ViolationsToXmlSummary" />
       <module name="homework2" />
       <extension name="coverage">
         <pattern>
@@ -109,8 +94,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="regexTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="part1.regexTest" />
+    <configuration name="XMLNamesMerging" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="part1.XMLNamesMerging" />
       <module name="homework2" />
       <extension name="coverage">
         <pattern>
@@ -137,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.XMLNamesMerging" />
+        <item itemvalue="Application.ViolationsToXmlSummary" />
         <item itemvalue="Application.XMLNameSurnameMerging" />
-        <item itemvalue="Application.ViolationJSONtoXMLSummary" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.regexTest" />
       </list>
     </recent_temporary>
   </component>
@@ -171,6 +156,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

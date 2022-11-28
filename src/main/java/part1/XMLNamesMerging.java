@@ -1,26 +1,19 @@
 package part1;
 
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.FileReader;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class XMLNameSurnameMerging {
+public class XMLNamesMerging {
     public static void main(String[] args) {
-        try (BufferedReader reader = new BufferedReader(new FileReader("src/main/resources/part1/input.xml"));
-             BufferedWriter writer = new BufferedWriter(new FileWriter("src/main/resources/part1/output.xml"))) {
-            String line;
-            StringBuilder builder = new StringBuilder();
-            while ((line = reader.readLine()) != null) {
-                builder.append(line).append(System.lineSeparator());
-                if (line.endsWith(">")) {
-                    writer.write(mergeTags(builder.toString()));
-                    builder = new StringBuilder();
-                }
-            }
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("src/main/resources/part1/output.xml"))) {
+            Scanner scanner = new Scanner(new File("src/main/resources/part1/input.xml")).useDelimiter(">");
+            while (scanner.hasNext())
+                writer.write(mergeTags(scanner.next()) + ">");
         } catch (IOException e) {
             e.printStackTrace();
         }
