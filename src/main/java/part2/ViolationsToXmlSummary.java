@@ -26,13 +26,13 @@ public class ViolationsToXmlSummary {
 
     public static void main(String[] args) {
         File directory = new File("src/main/resources/part2/input");
-        Map<ViolationType, Integer> fineSummary = getFineSummaryFromFolder(directory);
+        Map<ViolationType, Double> fineSummary = getFineSummaryFromFolder(directory);
         sortAndWriteSummaryToXml(fineSummary, new File("src/main/resources/part2/output/fine_summary.xml"));
     }
 
-    private static Map<ViolationType, Integer> getFineSummaryFromFolder(File folder) {
+    private static Map<ViolationType, Double> getFineSummaryFromFolder(File folder) {
         File[] files = folder.listFiles(pathname -> pathname.getName().endsWith(".json"));
-        Map<ViolationType, Integer> violationsTypeInteger = new HashMap<>();
+        Map<ViolationType, Double> violationsTypeInteger = new HashMap<>();
         if (files != null) {
             for (File fileName : files) {
                 try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
@@ -45,7 +45,7 @@ public class ViolationsToXmlSummary {
                             builder = new StringBuilder();
 
                             Violation tmp = JSON_MAPPER.readValue(jObj, Violation.class);
-                            violationsTypeInteger.merge(tmp.getType(), tmp.getFineAmount(), Integer::sum);
+                            violationsTypeInteger.merge(tmp.getType(), tmp.getFineAmount(), Double::sum);
                         }
                     }
                 } catch (IOException e) {
@@ -56,7 +56,7 @@ public class ViolationsToXmlSummary {
         return violationsTypeInteger;
     }
 
-    private static void sortAndWriteSummaryToXml(Map<ViolationType, Integer> summaryMap, File outPath) {
+    private static void sortAndWriteSummaryToXml(Map<ViolationType, Double> summaryMap, File outPath) {
         summaryMap = summaryMap.entrySet().stream()
                 .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,

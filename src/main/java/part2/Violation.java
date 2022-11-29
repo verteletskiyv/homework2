@@ -20,7 +20,7 @@ public class Violation {
     private ViolationType type;
 
     @JsonAlias("fine_amount")
-    private Integer fineAmount;
+    private Double fineAmount;
 
     private Violation() {}
 
@@ -40,7 +40,7 @@ public class Violation {
         return type;
     }
 
-    public int getFineAmount() {
+    public double getFineAmount() {
         return fineAmount;
     }
 }
