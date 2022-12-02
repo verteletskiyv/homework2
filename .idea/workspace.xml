@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107a09a9-0c16-408a-a46b-068babf8067c" name="Changes" comment="" />
+    <list default="true" id="107a09a9-0c16-408a-a46b-068babf8067c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/part1/XMLNamesMerging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/part1/XMLNamesMerging.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +43,8 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Projects/homework2/src/main/resources/part2/jsons&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -149,6 +154,10 @@
       <workItem from="1669137243311" duration="7765000" />
       <workItem from="1669212216160" duration="2034000" />
       <workItem from="1669215793957" duration="8751000" />
+      <workItem from="1669714335699" duration="331000" />
+      <workItem from="1669746280409" duration="801000" />
+      <workItem from="1669806307878" duration="14000" />
+      <workItem from="1669981546844" duration="173000" />
     </task>
     <task id="LOCAL-00001" summary="refactor part_1, rename classes">
       <created>1669674941171</created>
@@ -157,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669674941171</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="minor refactor">
+      <created>1669714489053</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669714489053</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,7 +192,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="refactor part_1, rename classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor part_1, rename classes" />
+    <MESSAGE value="minor refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor refactor" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

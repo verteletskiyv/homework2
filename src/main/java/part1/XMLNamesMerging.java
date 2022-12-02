@@ -10,6 +10,7 @@ import java.util.regex.Pattern;
 
 public class XMLNamesMerging {
     public static void main(String[] args) {
+        long start = System.currentTimeMillis();
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("src/main/resources/part1/output.xml"))) {
             Scanner scanner = new Scanner(new File("src/main/resources/part1/input.xml")).useDelimiter(">");
             while (scanner.hasNext())
@@ -17,6 +18,7 @@ public class XMLNamesMerging {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        System.out.println("End of jsonRead: " + (System.currentTimeMillis() - start) + "ms. Thread: " +Thread.currentThread().getId());
     }
 
     private static String mergeTags(String tag) {

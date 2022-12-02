@@ -1,5 +1,7 @@
 package part2;
 
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.core.JsonToken;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
@@ -7,11 +9,13 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.Comparator;
+import java.util.Objects;
 import java.util.stream.Collectors;
+
 
 public class ViolationsToXmlSummary {
     private static final ObjectMapper JSON_MAPPER;
@@ -32,28 +36,22 @@ public class ViolationsToXmlSummary {
 
     private static Map<ViolationType, Double> getFineSummaryFromFolder(File folder) {
         File[] files = folder.listFiles(pathname -> pathname.getName().endsWith(".json"));
-        Map<ViolationType, Double> violationsTypeInteger = new HashMap<>();
-        if (files != null) {
-            for (File fileName : files) {
-                try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
-                    String line;
-                    StringBuilder builder = new StringBuilder();
-                    while ((line = reader.readLine()) != null) {
-                        builder.append(line).append(System.lineSeparator());
-                        if (line.endsWith("}") || line.endsWith("},")) {
-                            String jObj = builder.toString().replaceAll("(\\[)|(])", "");
-                            builder = new StringBuilder();
+        Map<ViolationType, Double> violationsTypeDouble = new HashMap<>();
+        for (File fileName : Objects.requireNonNull(files)) {
+            try (BufferedReader reader = new BufferedReader(new FileReader(fileName));
+                 JsonParser jsonParser = JSON_MAPPER.getFactory().createParser(reader)) {
+                if (jsonParser.nextToken() != JsonToken.START_ARRAY)
+                    throw new IllegalStateException("Expected content to be an array");
 
-                            Violation tmp = JSON_MAPPER.readValue(jObj, Violation.class);
-                            violationsTypeInteger.merge(tmp.getType(), tmp.getFineAmount(), Double::sum);
-                        }
-                    }
-                } catch (IOException e) {
-                    e.printStackTrace();
+                while (jsonParser.nextToken() != JsonToken.END_ARRAY) {
+                    Violation tmp = JSON_MAPPER.readValue(jsonParser, Violation.class);
+                    violationsTypeDouble.merge(tmp.getType(), tmp.getFineAmount(), Double::sum);
                 }
+            } catch (IOException e) {
+                throw new RuntimeException(e);
             }
         }
-        return violationsTypeInteger;
+        return violationsTypeDouble;
     }
 
     private static void sortAndWriteSummaryToXml(Map<ViolationType, Double> summaryMap, File outPath) {
